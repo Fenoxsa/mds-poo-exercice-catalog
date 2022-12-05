@@ -2,18 +2,12 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
 use App\Models\Genre;
 use App\Models\Movie;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 
-=======
-use App\Models\Movie;
-use Illuminate\Http\Request;
-
->>>>>>> 29e211f93028ce3b24f9aa628176dc93133c7290
 class MovieController extends Controller
 {
     public function show($id){
@@ -25,11 +19,9 @@ class MovieController extends Controller
         // Movie::where('id', $id)->first();
 
         $movie = Movie::where('id',$id)->first();
-        dump($movie);
         return view('movies.show',['movie'=>$movie]);
 
     }
-<<<<<<< HEAD
     public function list(Request $request){
 
         
@@ -60,24 +52,11 @@ class MovieController extends Controller
             'filtre' => $filtre,
             'genre' => $genre,
         ]);
-=======
-    public function list(Request $resquest){
-
-        if ($resquest->query('orderBy') && $resquest->query('order')){
-            $movies = Movie::OrderBy($resquest->query('orderBy'), $resquest->query('order'))
-            ->paginate(21);
-        }
-        else{   
-            $movies = Movie::paginate(21);
-        }
-
-        return view('movies.list',['movies'=>$movies]);
->>>>>>> 29e211f93028ce3b24f9aa628176dc93133c7290
     }
 
     public function random(){
        $movie = Movie::inRandomOrder()->first();
-        // return dd($movie);
+        // 
        return view('movies.show', ['movie'=>$movie]);
     }
 }

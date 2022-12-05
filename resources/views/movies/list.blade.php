@@ -11,6 +11,7 @@
     <a class="menu-aleatoire" href="/movies/random">Films aléatoires</a>
     <a class="menu-films" href="/movies">Tous les films</a>
     <a class="menu-films" href="/genre">Genre</a>
+    <a clas="menu-films" href="/series">Séries</a>
 </div>
 <div class="trier">
     <a href="/movies?orderBy=startYear&order=asc">Trier par Date</a>
@@ -27,11 +28,7 @@
             @endforeach
         </div>
         <div class="navigation">
-<<<<<<< HEAD
             <span class="link"><a>{{$movies->links()}}</a></span>
-=======
-            <span class="link"><a>{{$movies->links()}}</span></a>
->>>>>>> 29e211f93028ce3b24f9aa628176dc93133c7290
         </div>
 </body>
 </html>

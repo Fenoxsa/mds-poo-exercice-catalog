@@ -10,6 +10,7 @@
 <div class="Menu">
     <a class="menu-aleatoire" href="/series/random">Série aléatoire</a>
     <a class="menu-films" href="/series">Toutes les séries</a>
+    <a class="menu-films" href="/movies">Tous les films</a>
 </div>
 <div class="trier">
     <a href="/series?orderBy=startYear&order=asc">Trier par Date</a>
