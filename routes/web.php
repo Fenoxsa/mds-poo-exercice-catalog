@@ -2,7 +2,10 @@
 
 use App\Http\Controllers\GenreController;
 use App\Http\Controllers\MovieController;
+<<<<<<< HEAD
 use App\Http\Controllers\SerieController;
+=======
+>>>>>>> 29e211f93028ce3b24f9aa628176dc93133c7290
 use App\Models\Movie;
 use Illuminate\Support\Facades\Route;
 
@@ -31,8 +34,12 @@ Route::get('/movies',[MovieController::class, 'list']);
 
 Route::get('/movies/{id}', [MovieController::class, 'show']);
 
+<<<<<<< HEAD
 Route::get('/genre', [GenreController::class, 'list']);
 
 Route::get('/series', [SerieController::class, 'list']);
 
 Route::get('/series/{id}',[SerieController::class, 'show']);
+=======
+Route::get('/genre', [GenreController::class, 'list']);
+>>>>>>> 29e211f93028ce3b24f9aa628176dc93133c7290

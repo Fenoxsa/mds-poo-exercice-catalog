@@ -27,7 +27,11 @@
             @endforeach
         </div>
         <div class="navigation">
+<<<<<<< HEAD
             <span class="link"><a>{{$movies->links()}}</a></span>
+=======
+            <span class="link"><a>{{$movies->links()}}</span></a>
+>>>>>>> 29e211f93028ce3b24f9aa628176dc93133c7290
         </div>
 </body>
 </html>

@@ -11,7 +11,11 @@
 <div class="list_genre">
     <ul>
         @foreach ($genre as $genre)
+<<<<<<< HEAD
         <li><a href="/movies?genre={{$genre->label}}">{{$genre->label}}</a></li>
+=======
+        <li><a href="#">{{$genre['label']}}</a></li>
+>>>>>>> 29e211f93028ce3b24f9aa628176dc93133c7290
         @endforeach
     </ul>
     <a href="javascript:history.back()" class="btn_accueil"> Retour</a>
