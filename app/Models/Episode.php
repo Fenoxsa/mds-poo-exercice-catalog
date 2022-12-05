@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Movie extends Model
+class Episode extends Model
 {
     use HasFactory;
 
@@ -14,7 +14,7 @@ class Movie extends Model
      *
      * @var string
      */
-    protected $table = 'movies';
+    protected $table = 'genres';
 
     /**
      * Indicates if the model should be timestamped.
@@ -23,8 +23,8 @@ class Movie extends Model
      */
     public $timestamps = false;
 
-    public function genre()
+    public function series()
     {
-        return $this->belongsToMany(Genre::class,'movies_genres');
+        return $this->belongsToMany(Series::class,'movies_genres');
     }
 }
